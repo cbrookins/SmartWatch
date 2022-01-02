@@ -1,5 +1,5 @@
 /*
-SmartWatch
+SmartWatchy
 https://github.com/theRealc2c2/SmartWatch
 
 Based on Bahn-for-Watchy
@@ -13,8 +13,10 @@ https://watchy.sqfmi.com
 #include "Teko_Regular12pt7b.h"
 #include "Teko_Regular50pt7b.h"
 #include "icons.h"
+#include "settings.h"
 
 class WatchFace : public Watchy { //inherit and extend Watchy class
+  using Watchy::Watchy;
   public:
     void drawWatchFace() { //override this method to customize how the watch face looks
       
@@ -86,7 +88,7 @@ class WatchFace : public Watchy { //inherit and extend Watchy class
 };
 
 
-WatchFace m; //instantiate your watchface
+WatchFace m(settings); //instantiate your watchface
 
 void setup() {
   m.init(); //call init in setup
