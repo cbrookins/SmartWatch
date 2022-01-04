@@ -6,3 +6,6 @@ https://github.com/BraininaBowl/Bahn-for-Watchy
 
 ## Face for Watchy watch  
 https://watchy.sqfmi.com
+
+## Latest verified Watchy firmware
+1.3.2
